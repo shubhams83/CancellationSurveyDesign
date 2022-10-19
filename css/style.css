@@ -1,0 +1,327 @@
+/* Default Styling */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: rgb(214, 209, 209);
+}
+
+/* Import Google Fonts */
+
+@font-face {
+    font-family: "RobotoBlack";
+    src: url(../fonts/Roboto/Roboto-Black.ttf);
+}
+
+@font-face {
+    font-family: "RobotoBold";
+    src: url(../fonts/Roboto/Roboto-Bold.ttf);
+}
+
+@font-face {
+    font-family: "RobotoLight";
+    src: url(../fonts/Roboto/Roboto-Light.ttf);
+}
+
+@font-face {
+    font-family: "RobotoMed";
+    src: url(../fonts/Roboto/Roboto-Medium.ttf);
+}
+
+@font-face {
+    font-family: "RobotoReg";
+    src: url(../fonts/Roboto/Roboto-Regular.ttf);
+}
+
+@font-face {
+    font-family: "RobotoThin";
+    src: url(../fonts/Roboto/Roboto-Thin.ttf);
+}
+
+/* Fonts Variables */
+
+:root {
+    --font-1: "RobotoBlack";
+    --font-2: "RobotoBold";
+    --font-3: "RobotoLight";
+    --font-4: "RobotoMed";
+    --font-5: "RobotoReg";
+    --font-6: "RobotoThin";
+}
+
+/* Color Variables */
+
+:root {
+    --pure: #F9F9F9;
+    --blu-btn: #286EF1; 
+    --back-blur: #F9F9F9;
+    --dark: black;
+}
+
+/* Global Classes */
+
+.flex {
+    display: flex;
+}
+
+.justify-btwn {
+    justify-content: space-between;
+}
+
+.justify-cntr {
+    justify-content: center;
+}
+
+.justify-even {
+    justify-content: space-evenly;
+}
+
+.justify-around {
+    justify-content: space-around;
+}
+
+.align-cntr {
+    align-items: center;
+}
+
+/* Container Styling */
+
+
+
+/* XXXXX Container Styling XXXXX */
+
+/* Header Styling */
+
+header .head {
+    background-color: #333333;
+    width: 100vw;
+    height: 3.5vw;
+}
+
+header nav {
+    margin: 0 auto;
+    width: 80vw;
+    text-align: left;
+    padding: 2vw 0vw;
+    font-family: var(--font-4);
+}
+
+/* XXXXX Header Styling XXXXX */
+
+
+/* Pop-Card Styling */
+
+
+.pop-card {
+    margin: 0 auto;
+    width: 50vw;
+    background-color: var(--pure);
+    box-shadow: 0px 0px 10px grey;
+    border-radius: 20px;
+    position: relative;
+    padding: 6vw 2vw;
+    z-index: 2;
+}
+
+.pop-off-icon {
+    width: 20vw;
+    text-align: center;
+}
+
+
+.pop-close-btn img {
+    width: 0.8vw;
+    position: absolute;
+    top: 2vw;
+    right: 2vw;
+}
+
+.pop-off-icon img {
+    width:6vw;
+}
+
+.pop-details {
+    font-family: var(--font-5);
+}
+
+.pop-details h1 {
+    font-family: var(--font-2);
+    margin-bottom: 1.2vw;
+    font-size: 2vw;
+}
+
+.pop-details p {
+    font-family: var(--font-3);
+    color: #555555;
+    font-size: 0.8vw;
+    margin: 2vw 0;
+}
+
+#off {
+    font-family: var(--font-2);
+    color: #555555;
+    margin: 1vw 0;
+}
+
+.btn button {
+    background-color: var(--blu-btn);
+    padding: 0.5vw 1.2vw;
+    color: var(--pure);
+    font-family: var(--font-2);
+    border: none;
+    border-radius: 5px;
+    margin-right: 2vw;
+}
+
+.btn a {
+    text-decoration: none;
+}
+
+
+
+
+
+/* XXXXX Pop-Card Styling XXXXX */
+
+#btn-2 {
+    padding: 2vw 0;
+    justify-content: flex-end;
+}
+
+#back {
+    background-color: var(--pure);
+    padding: 0.5vw 0.5vw;
+    color: var(--dark);
+    font-family: var(--font-2);
+    border: 1px solid grey;
+    border-radius: 5px;
+    margin-right: 1vw;
+    width: 5vw;
+}
+
+#cnc-mem {
+    background-color: grey;
+    padding: 0.1vw 0.5vw;
+    color: var(--dark);
+    font-family: grey;
+    border: 1px solid grey;
+    border-radius: 5px;
+    width: 10vw;
+    padding: 0.5vw 0.5vw;
+    font-family: var(--font-4);
+}
+
+span img {
+    width: 2vw;
+    margin-right: 1vw;
+}
+
+hr {
+    margin: 0 auto;
+    width: 80vw;
+    text-align: center;
+}
+
+.pop-card-2 {
+    flex-direction: column;
+    margin: 3vw auto auto auto;
+    width: 50vw;
+    background-color: var(--pure);
+    box-shadow: 0px 0px 10px grey;
+    border-radius: 20px;
+    position: relative;
+    padding: 3vw 2vw;
+    z-index: 2;
+    line-height: 2vw;
+}
+
+.p-2-head {
+    font-family: var(--font-4);
+    text-align: center;
+    padding: 2vw;
+}
+
+.p-2-head p {
+    font-family: var(--font-5);
+    color: grey;
+}
+
+.option {
+    width: 40vw;
+    border-radius: 30px;
+    border: 1px solid grey;
+    margin: 0.5vw 0;
+    padding: 0.5vw 1vw;
+    font-family: var(--font-4);
+}
+
+.option input, .option-2 input {
+    margin-right: 0.5vw;
+}
+
+.error-message img {
+    width: 2vw;
+    margin-right: 1vw;
+}
+
+.error-message {
+    background-color: #FEECEC;
+    width: 42vw;
+    border-radius: 10px;
+    padding: 1vw;
+    margin: 2vw 0;
+}
+
+.error-text p {
+    line-height: 1vw;
+    font-family: var(--font-5);
+}
+
+
+/* Page - 3 Styling */
+
+.option-2 {
+    background-color: #D5E3FE;
+    width: 40vw;
+    border-radius: 30px;
+    border: 1px solid grey;
+    margin: 0.5vw 0;
+    padding: 0.5vw 1vw;
+    font-family: var(--font-4);
+}
+
+textarea {
+    width: 39vw;
+    border-radius: 5px;
+    margin: 0.6vw 0;
+    padding: 1vw;
+}
+
+#btn-3 {
+    justify-content: space-between;
+}
+
+select {
+    background-color: #D5E3FE;
+    width: 42vw;
+    border-radius: 10px;
+    border: 1px solid grey;
+    padding: 1vw 1vw;
+    font-family: var(--font-4);
+    font-size: 0.8vw;
+}
+
+
+
+#hr {
+    margin: 1.5vw auto;
+    width: 42vw;
+    text-align: center;
+}
+
